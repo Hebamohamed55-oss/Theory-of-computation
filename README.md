@@ -50,6 +50,7 @@ dfa2 = DFA(
 print(are_equivalent(dfa1, dfa2))  # Output: True
 
 
+# Example Grammar in CNF
 📁 Project 2: CYK Parser for CFG in CNF
 📌 Objective
 Use the CYK Algorithm to determine whether a given string is part of a language defined by a Context-Free Grammar (CFG) in Chomsky Normal Form (CNF).
@@ -60,10 +61,6 @@ Grammar is represented as a dictionary: each non-terminal maps to a list of prod
 The CYK table is built bottom-up.
 
 If 'S' (start symbol) exists in the top-right cell, then the string is accepted.
-
-
-
-# Example Grammar in CNF
 grammar = {
     'S': [('A', 'B'), ('B', 'A')],
     'A': [('a',)],
